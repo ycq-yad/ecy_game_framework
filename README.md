@@ -8,7 +8,6 @@
 #二.使用说明
   弹窗类继承BaseSceneUISkinPopView，场景类继承BaseSceneUISkin
   HttpMgr.ts   网络处理工具
-  
   GameData.ts  处理游戏通用数据
   GameDataManager.ts 处理玩家游戏数据
   SoundManager.ts   音效管理
@@ -29,6 +28,7 @@
   GameHomeView.ts 游戏主界面
   GameView.ts 游戏界面
   #如有不明白的地方可以邮件咨询
-    .邮箱地址:525508243@qq.com
+   .邮箱地址:525508243@qq.com
+   
   
   
