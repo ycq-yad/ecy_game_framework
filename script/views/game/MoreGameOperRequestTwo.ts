@@ -409,23 +409,4 @@ export default class MoreGameOperRequestTwo extends BaseSceneUISkinPopView {
         ViewChangeManager.getInstance().showCommonView();
     }
 
-    /**2020.6.17 玩家弹出盒子页面2秒后，出现个banner广告在继续游戏按钮上面，2秒后banner广告消失*/
-    public moreGameShowBinner(nNum: number) {
-        if (!MiniManeger.instance.stPhoneInfo) {
-            MiniManeger.instance.stPhoneInfo = platform.getSystemInfoSync() as any;
-        }
-        /**计算下坐标 */
-        let nData = MiniManeger.instance.stPhoneInfo.screenHeight / Laya.stage.height;
-        let nReadlTop = nData * (Laya.stage.height - nNum);
-        let nReadlLeft = MiniManeger.instance.stPhoneInfo.screenWidth / 2;
-
-        console.log("nReadlTop = ", nReadlTop, "nReadlLeft = ", nReadlLeft);
-        Laya.timer.once(2000, this, () => {
-            MiniManeger.instance.showBannerAd({ w: nReadlLeft, h: nReadlTop });
-        });
-        Laya.timer.once(4000, this, () => {
-            MiniManeger.instance.hideBanner();
-        })
-    }
-
 }
