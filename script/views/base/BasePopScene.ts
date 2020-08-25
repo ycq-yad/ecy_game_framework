@@ -10,8 +10,6 @@ export class BasePopScene extends BaseSceneUISkinPopView {
         if (this.isCreate) {
             this.initView();
             this.addEvent();
-            this.initMiniGame();
-
         }
     }
 
@@ -20,12 +18,7 @@ export class BasePopScene extends BaseSceneUISkinPopView {
         if (this.isCreate) {
             this.initView();
             this.addEvent();
-            this.initMiniGame();
         }
-    }
-
-    public initMiniGame(){
-
     }
     public initView() {
 
