@@ -199,7 +199,7 @@ export default class SuccessfulEntryOneView extends BaseSceneUISkinPopView {
         if (this.bTimeOver) {
 
             TipsManager.getInstance().showDefaultTips("领取失败");
-            //2020.7.13-1-1 1.从第4关后，每关开始游戏都会弹砸金蛋误点。
+            //2020.7.13-1-1 1.
             if (MiniManeger.instance.isWxMiniGameForOperReq()) {
 
                 if (PlayerDataManager.bGlobEnterGame) {
