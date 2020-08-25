@@ -560,13 +560,6 @@ export default class FailEntryTwoView extends BaseSceneUISkinPopView {
                 this.imageBtRestart.bottom = this.nBtNextLevelSp;
                 MiniManeger.instance.bFlagSpecialView = false;
                 MiniManeger.instance.hideBanner();
-                //一秒后显示binner
-                Laya.timer.once(1000, this, () => {
-                    MiniManeger.instance.bFlagSpecialView = true;
-                    MiniManeger.instance.showBannerAd();
-                    //按钮滑动动制定位置
-                    Laya.Tween.to(this.imageBtRestart, { bottom: this.nBtNextLevel }, 500, null);
-                })
                 return;
             } else {
                 this.imageBtRestart.bottom = this.nBtNextLevel;

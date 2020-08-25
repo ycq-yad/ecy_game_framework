@@ -252,22 +252,9 @@ export default class FailEntryOneView extends BaseSceneUISkinPopView {
         }
     }
 
-    /**为了过审 */
+   
     private forExamine() {
-        // if (!DeviceUtil.isWXMiniGame()) {
-        //     return;
-        // }
-        // if (BaseConst.infos.gameInfo.openPsAward == 1) {
-        //     this.btLable.y = 1400;
-        //     this.imageRecv.bottom = 347;
-        //     this.imageBtSign.bottom = 140;
-        //     this.boxAni.centerY = -100;
-        // } else {
-        //     this.btLable.y = 1310;
-        //     this.imageRecv.bottom = 397;
-        //     this.imageBtSign.bottom = 190;
-        //     this.boxAni.centerY = -150;
-        // }
+        
     }
 
     //2020.7.13-8
@@ -285,13 +272,6 @@ export default class FailEntryOneView extends BaseSceneUISkinPopView {
                 this.btLable.bottom = this.nBtNextLevelSp;
                 MiniManeger.instance.bFlagSpecialView = false;
                 MiniManeger.instance.hideBanner();
-                //一秒后显示binner
-                Laya.timer.once(1000, this, () => {
-                    MiniManeger.instance.bFlagSpecialView = true;
-                    MiniManeger.instance.showBannerAd();
-                    //按钮滑动动制定位置
-                    Laya.Tween.to(this.btLable, { bottom: this.nBtNextLevel }, 500, null);
-                })
                 return;
             } else {
                 this.btLable.bottom = this.nBtNextLevel;

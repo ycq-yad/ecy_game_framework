@@ -230,7 +230,7 @@ export default class SuccessfulEntryOneView extends BaseSceneUISkinPopView {
         if (this.nCurCount >= this.nCountMax) {
             PlayerDataManager.getInstance().AddGoods(GoodsType.enum_GoodsType_Sp, this.nPsAdd);
             TipsManager.getInstance().showDefaultTips("体力+" + this.nPsAdd.toString());
-                //2020.7.13-1-1  1.从第4关后，每关开始游戏都会弹砸金蛋误点。
+                //2020.7.13-1-1  
                 if (MiniManeger.instance.isWxMiniGameForOperReq()) {
                     if (PlayerDataManager.bGlobEnterGame) {
                         ViewManager.getInstance().showView(MoreGameOperRequestTwo);
