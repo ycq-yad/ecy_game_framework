@@ -27,6 +27,7 @@
   SuccessfulEntryOneView.ts SuccessfulEntryThreeView.ts 成功的结算界面  
   GameHomeView.ts 游戏主界面  
   GameView.ts 游戏界面  
+  bundle.js   完整编译后的文件
  # 如有不明白的地方可以邮件咨询  
    .邮箱地址:525508243@qq.com  
    
